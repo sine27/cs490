@@ -9,6 +9,7 @@ public class buttonActiveAnotherTransform : MonoBehaviour, IPointerEnterHandler,
 	private bool isPointerEnter;
 	public Transform mytransform;
 
+
 	// Use this for initialization
 	void Start () {
 		counter = 0;
@@ -34,13 +35,13 @@ public class buttonActiveAnotherTransform : MonoBehaviour, IPointerEnterHandler,
 	}
 
 	public void OnPointerEnter(PointerEventData eventData){
-		//Debug.Log ("Enter");
+		Debug.Log ("Enter " + mytransform.name);
 		isPointerEnter = true;
 	}
 
 	public void OnPointerExit(PointerEventData eventData){
 		isPointerEnter = false;
-		//Debug.Log ("Leave");
+		Debug.Log ("Leave " + mytransform.name);
 		this.ResetCounter ();
 	}
 
