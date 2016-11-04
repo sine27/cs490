@@ -5,10 +5,9 @@ using System.Collections;
 public class RandomAction : StateMachineBehaviour {
 
     // OnStateEnter is called before OnStateEnter is called on any state inside this state machine
-	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		Debug.Log("OnStateEnter");
-		animator.SetInteger ("actionID", Random.Range(0, 3));
-	}
+//	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
+//		Debug.Log("OnStateEnter");
+//	}
 
 	// OnStateUpdate is called before OnStateUpdate is called on any state inside this state machine
 	//override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
@@ -16,9 +15,9 @@ public class RandomAction : StateMachineBehaviour {
 	//}
 
 	// OnStateExit is called before OnStateExit is called on any state inside this state machine
-	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		Debug.Log("OnStateExit");
-	}
+//	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
+//		Debug.Log("OnStateExit");
+//	}
 
 	// OnStateMove is called before OnStateMove is called on any state inside this state machine
 	//override public void OnStateMove(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
@@ -37,7 +36,7 @@ public class RandomAction : StateMachineBehaviour {
 	}
 
 	// OnStateMachineExit is called when exiting a statemachine via its Exit Node
-	override public void OnStateMachineExit(Animator animator, int stateMachinePathHash) {
-		Debug.Log("OnStateMachineExit");
-	}
+//	override public void OnStateMachineExit(Animator animator, int stateMachinePathHash) {
+//		Debug.Log("OnStateMachineExit");
+//	}
 }
